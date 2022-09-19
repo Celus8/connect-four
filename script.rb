@@ -52,7 +52,7 @@ class Game
       @quit = true
       return true
     end
-    if input.to_i.zero?
+    if input != '0' && input.to_i.zero?
       puts 'Please input a number'
       return false
     end
